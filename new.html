@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New User</title>
+<link rel='icon' href='images/favicon/faviconsearch.ico' type='image/x-icon'/ >
+<link rel="stylesheet" type="text/css" href="websitecss.css" />
+</head>
+<body>
+    <!--- This is my navigation -->
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="home.html"><font size=2><img class="homeicon" src="images\home.png" height="27" width="27"></font>Home</img></a>
+        </li>
+        <li>
+          <a href="about.html"><font size=2><img class="homeicon" src="images\about.png" height="27" width="27"></font>About us</img></a>
+        </li>
+        <li>
+          <a href="education.html"><font size=2><img class="homeicon" src="images\education.png" height="27" width="27"></font>Education</img></a>
+        </li>
+        <li>
+          <a href="friends.html"><font size=2><img class="homeicon" src="images\friend.png" height="27" width="27"></font>Link friends</img></a>
+        </li>
+        <li>
+          <a href="new.html"><font size=2><img class="homeicon" src="images\new.png" height="27" width="27"></font>New user</img></a>
+        </li>
+        <li>
+          <a href="search.html"><font size=2><img class="homeicon" src="images\search.png" height= "27" width= "27"></font>Search</img></a>
+        </li>
+        <li>
+          <a href="contact.html"><font size=2><img class="homeicon" src="images\contact.png" height= "27" width="27"></font>Contact us<img></a>
+        </li>
+      </ul>
+      </nav>
+<!-- End of navigation -->
+<section class="welcome">
+<div class="loginbox">
+<h1 class="topheader">Register</h1>
+<form>
+<div class="textbox">
+  <img src="images/favicon/usericon.ico" id="reguserico">
+  <input id="username" type="text" placeholder="Username" name="" value="" required maxlength="10">
+</div>
+
+<div class="textbox">
+  <img src="images/favicon/lockicon.ico" id="reglock1">
+  <input id="password" type="password" placeholder="Password" name="" value="" required>
+</div>
+
+<div class="textbox">
+  <img src="images/favicon/lockicon.ico" id="reglock2">
+  <input id="confirmpassword" type="password" placeholder="Confirm Password" name="" value="" required>
+</div>
+<script type="text/javascript">
+var password = document.getElementById("password");
+var confirm_password = document.getElementById("confirmpassword");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Are not the Same");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+<input class="btn" type="submit" name="" value="Register" onclick="store()">
+</div>
+</form>
+<script src="websitejs.js"></script>
+</section>
+</body>
+</html>
