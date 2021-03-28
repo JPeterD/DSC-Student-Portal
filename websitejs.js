@@ -4,7 +4,7 @@ document.getElementById("regbtn").onclick = function() {
 }
 
 //This is for verifying the form details
-  function Validation()
+function Validation()
 {
   var username = document.forms["formiguess"]["username"];
   var password = document.forms["formiguess"]["password"]
@@ -22,7 +22,7 @@ document.getElementById("regbtn").onclick = function() {
     password.focus();
     return false;
   }
-return true;
+  return true;
 }
 
 //This is for storing registration details
@@ -35,27 +35,27 @@ function store() {
   else{
     window.alert("Invalid registration details")
   }
-	if(password.value = confirm_password.value && password.value != ""){
+  if(password.value = confirm_password.value && password.value != ""){
     window.alert("You have registered");
     password.focus();
-	}
+  }
 }
 
 //This is to check if the stored details are the same as the entered ones.
 function check() {
 
-    var storedName = localStorage.getItem('username');
-    var storedPw = localStorage.getItem('password');
+  var storedName = localStorage.getItem('username');
+  var storedPw = localStorage.getItem('password');
 
 
-    var userName = document.getElementById('username');
-    var userPw = document.getElementById('password');
+  var userName = document.getElementById('username');
+  var userPw = document.getElementById('password');
 
 
-    if(userName.value == storedName && userPw.value == storedPw) {
-        alert('You are now logged in.');
-    }
-    else {
-        alert('Incorrect login details');
-    }
+  if(userName.value == storedName && userPw.value == storedPw) {
+    alert('You are now logged in.');
+  }
+  else {
+    alert('Incorrect login details');
+  }
 }
