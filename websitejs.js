@@ -1,6 +1,6 @@
 //This just redirects the button the registration page.
 document.getElementById("regbtn").onclick = function() {
-  location.href = "new.html";
+  location.href = "signup.html";
 }
 
 //This is for verifying the form details
