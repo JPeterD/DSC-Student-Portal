@@ -22,7 +22,7 @@
         <a href="busroute.php"><font size=2><img src="images\busroute.png" height="27" width="27"></font>Bus Route</img></a>
       </li>
       <li>
-        <a href="contact.html"><font size=2><img class="homeicon" src="images\contact.png" height= "27" width="27"></font>Contact<img></a>
+        <a href="contact.php"><font size=2><img class="homeicon" src="images\contact.png" height= "27" width="27"></font>Contact<img></a>
       </li>
       <li>
         <a href="logout.php"><font size=2><img class="homeicon" src="images\signout.png" height= "27" width="27"></font>Logout<img></a>

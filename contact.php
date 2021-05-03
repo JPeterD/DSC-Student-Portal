@@ -25,7 +25,7 @@
       <textarea name="VisitorComment" rows="6" cols="50">
       </textarea>
       <br>
-      <input type="submit" id="emailsubmit" value="Email This Form">
+      <input class="btn"type="submit" id="emailsubmit" value="Email This Form">
     </form>
   </section>
 </body>
