@@ -34,7 +34,7 @@ and password='".md5($password)."'";
     }else{
 ?>
   <!--- This is my navigation -->
-  <?php include 'nav.php';
+  <?php include 'navout.php';
 ?>
   <!-- End of navigation -->
   <section class="welcome">

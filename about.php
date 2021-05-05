@@ -1,5 +1,4 @@
 <?php
-//include auth.php file on all secure pages
 include("auth.php");
 ?>
 
@@ -19,6 +18,8 @@ include("auth.php");
   <!--     Navigation Bar end       -->
   <section id="welcome" class="welcome">
     <h1 class="topheader"><u>About</u></h1>
+    <p>The Dominica State College Student Portal is a supplementary platform to the Orbund SIS</p>
+    <p>It aims to provide additional assistance to students of the Dominica State College.</p>
   </section>
 </body>
 </html>

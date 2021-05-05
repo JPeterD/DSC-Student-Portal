@@ -7,7 +7,6 @@
 </head>
 <body>
 <?php
-// Include config file
 require ('db.php');
 
 if (isset($_REQUEST['username'])){
@@ -29,7 +28,7 @@ VALUES ('$username', '".md5($password)."')";
 ?>
 
   <!--- This is my navigation -->
-  <?php include 'nav.php';
+  <?php include 'navout.php';
 ?>
   <!-- End of navigation -->
   <section class="welcome">
