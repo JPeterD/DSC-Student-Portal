@@ -10,7 +10,6 @@
     <?php include 'nav.php';
 ?>
   <!-- End of navigation bar -->
-  <!--Unique Page html -->
   <section id="welcome" class="welcome">
     <h1 class=topheader><u>Contact</u></h1>
     <form id="emailform" action="mailto:jahrespeter@gmail.com" method="POST" enctype="multipart/form-data">

@@ -10,9 +10,8 @@
 require ('db.php');
 
 if (isset($_REQUEST['username'])){
-        // removes backslashes
+
  $username = stripslashes($_REQUEST['username']);
-        //escapes special characters in a string
  $username = mysqli_real_escape_string($connection,$username); 
  $password = stripslashes($_REQUEST['password']);
  $password = mysqli_real_escape_string($connection,$password);
